@@ -1,26 +1,26 @@
 import { useEffect, useState } from 'react'
 import { CardMateria } from './CardMateria.jsx'
 
-export function App() {
-  const [materias, setMaterias] = useState([])
+export function App(){
+  const [materias, setMaterias] = useState([]);
 
   useEffect(() => {
-    fetch('/db/db.json')
-      .then(res => res.json())
-      .then(data => setMaterias(data.materias))
+    fetch('http://localhost:3001/materias')
+    .then(materia => materia.json())
+    .then(data => setMaterias(data))
   }, [])
 
-  return (
-    <div>
-      <div>
-        {materias.map(materia => (
-          <CardMateria
-            key={materia.id}
-            CardMateriaTitulo={materia.nome}
-            CardMateriaTexto={materia.descricao}
-          />
-        ))}
+
+  return(
+    <>
+      <div className='CardMateria'>
+        {materias.map(materia => 
+          <CardMateria 
+            id={materia.id}
+            CardMateriaTitulo={materia.titulo}
+            CardMateriaDescricao={materia.descricao}>
+          </CardMateria>)}
       </div>
-    </div>
+    </>
   )
 }

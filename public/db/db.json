@@ -2,31 +2,31 @@
   "materias": [
     {
       "id": 1,
-      "nome": "Algoritmos e Estruturas de Dados",
+      "titulo": "Algoritmos e Estruturas de Dados",
       "duracao": "1 semestre",
       "descricao": "Estudo de lógica, algoritmos, estruturas de dados e resolução de problemas computacionais."
     },
     {
       "id": 2,
-      "nome": "Banco de Dados",
+      "titulo": "Banco de Dados",
       "duracao": "1 semestre",
       "descricao": "Introdução a bancos de dados relacionais, SQL, modelagem e administração de dados."
     },
     {
       "id": 3,
-      "nome": "Desenvolvimento Web",
+      "titulo": "Desenvolvimento Web",
       "duracao": "1 semestre",
       "descricao": "Fundamentos de HTML, CSS, JavaScript, frameworks e desenvolvimento de aplicações web."
     },
     {
       "id": 4,
-      "nome": "Inteligência Artificial",
+      "titulo": "Inteligência Artificial",
       "duracao": "1 semestre",
       "descricao": "Conceitos de IA, aprendizado de máquina, redes neurais e aplicações em TI."
     },
     {
       "id": 5,
-      "nome": "Segurança da Informação",
+      "titulo": "Segurança da Informação",
       "duracao": "1 semestre",
       "descricao": "Princípios de segurança, criptografia, proteção de dados e cibersegurança."
     }
