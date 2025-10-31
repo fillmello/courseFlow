@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
-import { CardMateria } from './CardMateria.jsx'
+import { CardMateria } from './components/CardMateria.jsx'
+import {Heading} from './components/Heading.tsx'
 
 export function App(){
   const [materias, setMaterias] = useState([]);
