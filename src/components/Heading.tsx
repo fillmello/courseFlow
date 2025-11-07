@@ -1,9 +1,11 @@
 type HeadingProps = {
-    children: string;
+    children: React.ReactNode;
 }
 
 export function Heading(props: HeadingProps){
+    const { children } = props; // ====== const children = props.children
+
     console.log(props);
-    return <h1>{props.children}</h1>;
+    return <h1>{children}</h1>;
 }
 

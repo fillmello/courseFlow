@@ -16,10 +16,10 @@ export function App(){
 
   return(
     <>
-      <div className='CardMateria' style={styles}>
+      <div className='CardMateria'>
         {materias.map(materia => 
           <CardMateria 
-            id={materia.id}
+            key = {materia.id}
             CardMateriaTitulo={materia.titulo}
             CardMateriaDescricao={materia.descricao}>
           </CardMateria>)}
