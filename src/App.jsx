@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { CardMateria } from './components/CardMateria.jsx'
 import {Heading} from './components/Heading.tsx'
+import'./styles/global.css'
+import './styles/theme.css'
 
 export function App(){
   const [materias, setMaterias] = useState([]);
@@ -14,7 +16,7 @@ export function App(){
 
   return(
     <>
-      <div className='CardMateria'>
+      <div className='CardMateria' style={styles}>
         {materias.map(materia => 
           <CardMateria 
             id={materia.id}
