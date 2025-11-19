@@ -11,6 +11,7 @@
     "start": "json-server --watch ./public/db/db.json --port 3001"
   },
   "dependencies": {
+    "@radix-ui/react-hover-card": "^1.1.15",
     "@tailwindcss/postcss": "^4.1.12",
     "@tailwindcss/vite": "^4.1.17",
     "class-variance-authority": "^0.7.1",

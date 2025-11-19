@@ -4,30 +4,35 @@
       "id": 1,
       "titulo": "Algoritmos e Estruturas de Dados",
       "duracao": "1 semestre",
+      "cargaHoraria": 80,
       "descricao": "Estudo de lógica, algoritmos, estruturas de dados e resolução de problemas computacionais."
     },
     {
       "id": 2,
       "titulo": "Banco de Dados",
       "duracao": "1 semestre",
+      "cargaHoraria": 72,
       "descricao": "Introdução a bancos de dados relacionais, SQL, modelagem e administração de dados."
     },
     {
       "id": 3,
       "titulo": "Desenvolvimento Web",
       "duracao": "1 semestre",
+      "cargaHoraria": 80,
       "descricao": "Fundamentos de HTML, CSS, JavaScript, frameworks e desenvolvimento de aplicações web."
     },
     {
       "id": 4,
       "titulo": "Inteligência Artificial",
       "duracao": "1 semestre",
+      "cargaHoraria": 64,
       "descricao": "Conceitos de IA, aprendizado de máquina, redes neurais e aplicações em TI."
     },
     {
       "id": 5,
       "titulo": "Segurança da Informação",
       "duracao": "1 semestre",
+      "cargaHoraria": 60,
       "descricao": "Princípios de segurança, criptografia, proteção de dados e cibersegurança."
     }
   ]

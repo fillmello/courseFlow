@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react'
-import { CardMateria } from './components/CardMateria.jsx'
-import {Heading} from './components/Heading.tsx'
-import'./styles/global.css'
+import { CardMateria } from './components/CardMateria.tsx'
+import { HoverCardDemo } from './components/ui/HoverCardDemo' // fixed wrong extension .txs -> .tsx (import can omit extension)
 import './styles/theme.css'
+
+import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card"
 
 export function App(){
   const [materias, setMaterias] = useState([]);
@@ -16,13 +17,23 @@ export function App(){
 
   return(
     <>
-      <div className='CardMateria'>
-        {materias.map(materia => 
-          <CardMateria 
-            key={materia.id}
-            CardMateriaTitulo={materia.titulo}
-            CardMateriaDescricao={materia.descricao}>
-          </CardMateria>)}
+      <div className='CardMateria flex flex-col sm:grid-cols-2 lg:grid-cols-3 gap-6'>
+        {materias.map(materia => (
+          <HoverCard key={materia.id}>
+            <HoverCardTrigger asChild>
+              <div>
+                <CardMateria 
+                  CardMateriaTitulo={materia.titulo}
+                  cargaHoraria={materia.cargaHoraria}
+                  CardMateriaDescricao={materia.descricao}
+                />
+              </div>
+            </HoverCardTrigger>
+            <HoverCardContent className="text-sm">
+              Carga horária: <span className="font-medium">{materia.cargaHoraria}h</span>
+            </HoverCardContent>
+          </HoverCard>
+        ))}
       </div>
     </>
   )
